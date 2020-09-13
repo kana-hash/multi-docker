@@ -24,11 +24,11 @@ after_success:
 deploy:
     edge: true
     provider: elasticbeanstalk
-    region: ap-northeast-1
-    app: multi-docker
-    env: MultiDocker-env
-    bucket_name: elasticbeanstalk-ap-northeast-1-138618234684
-    bucket_pass: docker-multi
+    region: 'ap-northeast-1'
+    app: 'multi-docker'
+    env: 'MultiDocker-env'
+    bucket_name: 'elasticbeanstalk-ap-northeast-1-138618234684'
+    bucket_pass: 'docker-multi'
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
